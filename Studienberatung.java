@@ -1,16 +1,35 @@
 	import java.util.*;
 	public class Studienberatung{
 		public static void main(String[] args){
-		Scanner scanner = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 
-		System.out.println(„Hast du Abitur?“);
-		String answer = scanner.next();
+			System.out.println("Hast du Abitur? [j]a oder [n]ein");
+			String answer = scanner.next();
 
-		System.out.println(„Hast du Fachabitur?“)
-		answer = scanner.next();
-		if(answer.equalsIgnoreCase(„n“){
-		// Code für kein Abitur
-		}
-		
+			if(answer.equalsIgnoreCase("j")){
+				System.out.println("Bist du wissbegierig?")
+				answer = scanner.next();
+
+				if(answer.equalsIgnoreCase("j")){
+					System.out.println("Auf jeden Fall studieren");
+				}
+
+				else if(answer.equalsIgnoreCase("n")){
+					System.out.println("Nicht studieren");
+				}
+			}
+
+			else if(answer.equalsIgnoreCase("n")){
+				System.out.println("Hast du Fachabitur?")
+				answer = scanner.next();
+
+				if(answer.equalsIgnoreCase("j")){
+					// Hast du eine Berufsausbildung
+				}
+
+				else if(answer.equalsIgnoreCase("n")){
+					System.out.println("Nicht studieren");
+				}
+			}
 		}
 	}
