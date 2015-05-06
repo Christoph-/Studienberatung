@@ -13,7 +13,6 @@
 				if(answer.equalsIgnoreCase("j")){
 					System.out.println("Auf jeden Fall studieren");
 				}
-
 				else if(answer.equalsIgnoreCase("n")){
 					System.out.println("Nicht studieren");
 				}
@@ -24,7 +23,15 @@
 				answer = scanner.next();
 
 				if(answer.equalsIgnoreCase("j")){
-					// Hast du eine Berufsausbildung
+					System.out.println("Hast du eine Berufsausbildung?");
+					answer = scanner.next();
+
+					if(answer.equalsIgnoreCase("j")){
+						System.out.println("Du kannst ja später noch studieren");
+					}
+					else if(answer.equalsIgnoreCase("n")){
+						System.out.println("Besser noch studieren");
+					}
 				}
 
 				else if(answer.equalsIgnoreCase("n")){
